@@ -8,6 +8,7 @@ public class LPF
       if ( n % i == 0 && is_prime(i) )
         largest = i;
     System.out.println(largest);
+    
   }
 
   public static boolean is_prime(long n)
@@ -16,7 +17,7 @@ public class LPF
       return false;
 
     for ( int i = 2; i < n; i++ )
-      if ( n % i == 0 )
+      if ( n != 2 && n % i == 0 )
         return false;
 
     return true;
