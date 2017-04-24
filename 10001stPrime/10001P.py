@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+"""
+Project Euler # 7
+
+"""
 from sympy import isprime
 
 x, count = 3, 1
