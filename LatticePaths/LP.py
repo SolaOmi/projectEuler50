@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 
+"""
+Project Euler # 15
+
+Use Pascals Triangle as a framework.
+"""
+
 lat = [] # Lattice node values
 
 for i in range(1, 42): # Loop creates Pascal's Triangle for a 20 x 20 square.

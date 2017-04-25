@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 
+"""
+Project Euler # 11
+
+"""
+
 import re
 
 text = open('pe11.txt')
