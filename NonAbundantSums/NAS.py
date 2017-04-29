@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 
+"""
+Project Euler # 23
+
+"""
+
 import math
 
 def factors(n):

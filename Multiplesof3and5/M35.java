@@ -1,15 +1,11 @@
 /*
 Project Euler # 1
 
-Using the boolean operator || (or) will capture the numbers that are
-exclusively multiples of 3 and 5 in addition to numbers that are
-multiples of both.
+Brute Force
 */
 
-public class M35
-{
-    public static void main(String[] args)
-    {
+public class M35 {
+    public static void main(String[] args) {
         int sum = 0;
 
         for ( int i=0; i<1000; i++ )

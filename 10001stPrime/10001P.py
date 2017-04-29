@@ -3,7 +3,9 @@
 """
 Project Euler # 7
 
+Brute Force
 """
+
 from sympy import isprime
 
 x, count = 3, 1

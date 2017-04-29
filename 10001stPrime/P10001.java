@@ -1,18 +1,15 @@
 /*
 Project Euler # 7
 
+Brute Force
 */
 
-public class P10001
-{
-    public static void main(String[] args)
-    {
+public class P10001 {
+    public static void main(String[] args) {
         int n = 3 , count = 1, prime = 0;
 
-        while ( count != 10001 )
-        {
-            if ( is_prime(n) )
-            {
+        while ( count != 10001 ) {
+            if ( is_prime(n) ) {
                 count++;
                 prime = n;
             }
@@ -21,8 +18,7 @@ public class P10001
         System.out.println(prime);
     }
 
-    public static boolean is_prime(long n)
-    {
+    public static boolean is_prime(long n) {
         if ( n == 0  || n == 1 )
             return false;
 

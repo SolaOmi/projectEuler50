@@ -8,10 +8,8 @@ routes.
 
 import java.math.BigInteger;
 
-public class LP
-{
-    public static void main(String[] args)
-    {
+public class LP {
+    public static void main(String[] args) {
         int n = 20;
         BigInteger ans = factorial(2*n);
 
@@ -19,13 +17,10 @@ public class LP
         System.out.println(ans);
     }
 
-    public static BigInteger factorial(int n)
-    {
+    public static BigInteger factorial(int n) {
         BigInteger sum = BigInteger.ONE;
         for ( int i=1; i<=n; i++ )
-        {
             sum = sum.multiply(new BigInteger(i + ""));
-        }
 
         return sum;
     }

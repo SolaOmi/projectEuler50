@@ -2,6 +2,7 @@
 """
 Project Euler # 14
 
+Use a Key,Value data structure to store already calculated answers.
 """
 x = {1:1, 2: 2, 3: 8, 4: 3, 5: 6, 6: 9, 7: 17, 8: 4, 9: 20, 10: 7}
 

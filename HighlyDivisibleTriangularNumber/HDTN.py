@@ -23,7 +23,7 @@ def factors(n):
 x, f = 0, 0
 while f < 500:
     x += 1
-    triangleNumber = (x * (x+1))//2 # Formula for triangle numbers.
-    f = factors(triangleNumber)
+    triangle_number = (x*(x+1))//2 # Formula for triangle numbers.
+    f = factors(triangle_number)
 
-print(triangleNumber, f)
+print(triangle_number, f)

@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+"""
+Project Euler # 22
+
+"""
 import re
 
 text = open('pe22.txt')
