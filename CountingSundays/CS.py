@@ -3,6 +3,7 @@
 """
 Project Euler # 19
 
+Brute Force
 """
 
 from datetime import datetime, timedelta

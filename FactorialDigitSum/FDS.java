@@ -1,13 +1,13 @@
 /*
 Project Euler # 20
 
+Brute Force
 */
 
 import java.math.BigInteger;
 
 public class FDS {
-    public static void main( String[] args )
-    {
+    public static void main( String[] args ) {
         String number;
         int sum = 0;
 
@@ -18,8 +18,7 @@ public class FDS {
         System.out.println(sum);
     }
 
-    public static BigInteger factorial(int n)
-    {
+    public static BigInteger factorial(int n) {
         BigInteger sum = BigInteger.ONE;
         for ( int i=1; i<=n; i++ )
             sum = sum.multiply(new BigInteger(i + ""));

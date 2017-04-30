@@ -1,6 +1,7 @@
 /*
 Project Euler # 16
 
+Brute Force
 */
 
 import java.math.BigInteger;
@@ -10,8 +11,7 @@ public class PDS {
     BigInteger num = BigInteger.ONE;
     int sum = 0;
 
-    for ( int i=1; i<=1000; i++ )
-    {
+    for ( int i=1; i<=1000; i++ ) {
         BigInteger bigInt = new BigInteger("2");
         num = num.multiply(bigInt);
     }

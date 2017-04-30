@@ -3,6 +3,7 @@
 """
 Project Euler # 21
 
+Brute Force
 """
 
 import math
@@ -23,7 +24,7 @@ def factors(n):
 
 def is_amicable(a):
     b = sum(factors(a))
-    if a != b and a == sum(factors(b)):
-        return True
+    return a != b and a == sum(factors(b))
+
 
 print(sum(i for i in range(10001) if is_amicable(i)))

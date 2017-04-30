@@ -1,6 +1,11 @@
 /*
 Project Euler # 17
 
+Create string for the ones (0-9)
+""    ""     ""    "" teens (10-19)
+""    ""     ""    "" tens (20,30,40...90)
+""    ""     ""    "" hundred & and
+Figure out frequency of each String and add.
 */
 
 public class NLC {

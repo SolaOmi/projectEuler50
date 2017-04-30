@@ -1,6 +1,7 @@
 /*
 Project Euler # 19
 
+Brute Force
 */
 
 import java.util.Calendar;

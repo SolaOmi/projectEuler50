@@ -3,27 +3,26 @@
 """
 Project Euler # 23
 
+
 """
 
 import math
 
-def factors(n):
+def factors_sum(n):
     if n == 1:
-        return [1]
+        return 1
 
-    x = [1]
+    x = 1
     for i in range(2, int(math.sqrt(n))+1):
         if n % i == 0:
             if i*i == n:
-                x.append(i)
+                x += i
             else:
-                x.append(i)
-                x.append(n // i)
-    return sorted(x)
+                x += i + (n // i)
+    return x
 
 def is_abundant(n):
-    if sum(factors(n)) > n:
-        return True
+    return factors_sum(n) > n
 
 abundants = [i for i in range(1,28124) if is_abundant(i)]
 

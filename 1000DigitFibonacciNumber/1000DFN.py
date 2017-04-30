@@ -3,6 +3,7 @@
 """
 Project Euler # 25
 
+Brute Force
 """
 
 a,b = 1, 1

@@ -3,6 +3,7 @@
 """
 Project Euler # 20
 
+Brute Force
 """
 
 from math import factorial

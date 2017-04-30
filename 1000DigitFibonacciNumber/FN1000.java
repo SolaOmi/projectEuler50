@@ -1,6 +1,7 @@
 /*
 Project Euler # 25
 
+Brute Force
 */
 
 import java.math.BigInteger;
@@ -11,8 +12,7 @@ public class FN1000 {
                    cur = BigInteger.ONE;
         int index = 2, count = 0;
 
-        while ( count < 1000 )
-        {
+        while ( count < 1000 ) {
             temp = cur;
             cur = cur.add(prev);
             prev = temp;

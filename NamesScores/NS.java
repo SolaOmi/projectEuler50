@@ -15,8 +15,7 @@ public class NS {
 
         Arrays.sort(names);
         for ( int i=0; i<names.length; i++ )
-            for ( int j=0; j<names[i].length(); j++ )
-            {
+            for ( int j=0; j<names[i].length(); j++ ) {
                 if ( names[i].charAt(j) == '"')
                     continue;
                 else

@@ -32,8 +32,7 @@ public class NAS {
 
         int sum = 1;
         for ( int i=2; i<Math.round(Math.sqrt(n))+1; i++ )
-            if ( n % i == 0 )
-            {
+            if ( n % i == 0 ){
                 if ( i*i == n )
                     sum += i;
                 else
