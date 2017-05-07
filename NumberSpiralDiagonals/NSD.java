@@ -1,6 +1,4 @@
-#!/usr/bin/env python3
-
-"""
+/*
 Project Euler # 28
 
 f(n) = 4n**2 + bn + c
@@ -12,10 +10,19 @@ spiral(i) gives northwest diagonal
 spiral(i) - 2i gives northeast diagonal
 spiral(i) - 4i gives southeast diagonal
 spiral(i) - 6i gives southwest diagonal
-"""
+*/
 
-def spiral(n):
-    return 4*n**2 + 4*n + 1
+public class NSD {
+    public static void main( String[] args ) {
+        int sum = 1; // 1 for center of diagonal
 
-print(sum(4*spiral(i) - 12*i for i in range(1, 501)) + 1)
-# +1 for center of diagonal lines
+        for ( int i=1; i<=500; i++ )
+            sum += 4*spiral(i) - 12*i;
+
+        System.out.println(sum);
+    }
+
+    public static int spiral( int n ) {
+        return 4*n*n + 4*n + 1;
+    }
+}

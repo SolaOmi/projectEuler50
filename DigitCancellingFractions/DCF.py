@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 
+"""
+Project Euler # 33
+
+"""
+
 for i in range(10,100):
     for j in range(10, 100):
         if j < i and str(i)[1] != '0':
