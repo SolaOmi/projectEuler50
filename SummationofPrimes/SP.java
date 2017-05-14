@@ -8,7 +8,6 @@ function below is based on the Sieve of Eratosthenes.
 public class SP {
     public static void main(String[] args) {
         long sum = 0L;
-        int n = 0;
         boolean[] primes = sieve(2000000);
 
         for ( int i=0; i<primes.length; i++ )

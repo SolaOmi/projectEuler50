@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+"""
+Project Euler # 35
+
+"""
 
 from sympy import isprime
 from math import sqrt
@@ -21,4 +25,4 @@ def circular(n): # Finds out if prime is circular
             return False
     return True
 
-print(sum(1 for i, j in sieve(10**6) if j is True and circular(i) is True))
+print(sum(1 for i, j in sieve(10**6) if j and circular(i)))

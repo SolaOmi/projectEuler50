@@ -18,5 +18,6 @@ while n > 1:
     for i in primes:
         if n % i == 0:
             n = n / i
-            print(i)
             break
+
+print(i)

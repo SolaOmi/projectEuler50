@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 
+"""
+# Project Euler # 37
+
+"""
+
 from sympy import isprime
 
 def trunc_primes(p):
