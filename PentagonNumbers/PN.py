@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 
+"""
+Project Euler # 44
+
+"""
+
 from math import sqrt
 
 def is_pentagonal(n):

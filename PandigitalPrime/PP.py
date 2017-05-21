@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 
+"""
+Project Euler # 41
+
+"""
+
 from sympy import isprime
 from itertools import permutations
 

@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 
+"""
+Project Euler # 49
+
+"""
+
 from sympy import isprime
 
 primes = [i for i in range(1000, 10000) if isprime(i)]

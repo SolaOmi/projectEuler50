@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-# All hexagonal numbers are triangular.
+"""
+Project Euler # 45
+
+All hexagonal numbers are a subset of triangle numbers.
+"""
 
 from math import sqrt
 

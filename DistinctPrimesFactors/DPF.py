@@ -1,34 +1,34 @@
 #!/usr/bin/env python3
 
+"""
+Project Euler # 47
+
+"""
+
 import math
 from sympy import isprime
 
-def factors(n):
+def pfc(n):
+    # prime_factors_count (pfc) - counts the amount of prime factors.
+    count = 0
     if n == 1:
-        return [1]
+        return count
 
-    x = [1]
-    for i in range(2, int(math.sqrt(n))+1):
+    for i in range(2, int(math.sqrt(n)+1)):
         if n % i == 0:
-            if i*i == n:
-                x.append(i)
+            if i*i == n and isprime(i):
+                count += 1
             else:
-                x.append(i)
-                x.append(n // i)
-    return sorted(x)
+                if isprime(i):
+                    count += 1
+                if isprime(n // i):
+                    count += 1
+    return count
 
 n = 0
 while True:
-    if sum([1 for i in factors(n) if isprime(i)]) >= 4:
-        if sum([1 for i in factors(n+1) if isprime(i)]) >= 4:
-            if sum([1 for i in factors(n+2) if isprime(i)]) >= 4:
-                if sum([1 for i in factors(n+3) if isprime(i)]) >= 4:
-                    break
-                else: n += 1
-            else:
-                n += 1
-        else:
-            n += 1
+    if pfc(n) >= 4 and pfc(n+1) >= 4 and pfc(n+2) >= 4 and pfc(n+3) >= 4:
+        break
     else:
         n += 1
 

@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+"""
+Project Euler # 42
+
+"""
 
 import re
 

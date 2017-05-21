@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 
+"""
+Project Euler # 43
+
+"""
+
 def divisibility(m, n, position):
     # checks divisibility by adding digits to front or back of number
     for i in range(0,10):

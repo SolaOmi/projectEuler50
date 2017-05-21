@@ -13,11 +13,12 @@ public class CS {
       Calendar end = new GregorianCalendar(2000, Calendar.DECEMBER, 31);
       int count = 0;
 
-      while (start.before(end)) {
-          if (start.get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY)
+      while ( start.before(end) ) {
+          if ( start.get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY )
               count++;
           start.add(Calendar.MONTH, 1);
       }
+      
       System.out.println(count);
 
    }
